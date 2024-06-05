@@ -14,34 +14,35 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-body-secondary">
+<body class="bg-dark">
 
     <div class="container text-center">
         <div class="row">
             <div class="col-md-3"></div> <!-- Adiciona espaço vazio no lado esquerdo -->
             <div class="col-md-6 bg-white" id="div-principal">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
+            <nav class="navbar navbar-expand-lg  ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="/img/logo.jpg" alt="Logo" width="80" height="68" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link" href="inicio">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="quemsomos">Quem Somos</a>
+                                    <a class="nav-link" href="quemsomos">história - Quem Somos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contato">Contato</a>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                </nav>
+          </div>
+        </nav>
                 <div>
                     <form action="/contato" method="POST" style="margin-top: 20px;">
                         @csrf
@@ -82,11 +83,7 @@
                         @endif
                     </form>
                 </div>
-                <footer class="bg-body-tertiary py-3">
-                    <div class="container">
-                        <p class="mb-0">© 2024 Jão. Todos os direitos reservados.</p>
-                    </div>
-                </footer>
+                
             </div>
             <div class="col-md-3"></div> <!-- Adiciona espaço vazio no lado direito -->
         </div>
